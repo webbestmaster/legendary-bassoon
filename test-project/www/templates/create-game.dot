@@ -1,0 +1,6 @@
+<div>
+	<div data-route="page">to page</div>
+	<div data-route=":back">back</div>
+	<h1>setup game here</h1>
+	<h1 data-route="game">to game</h1>
+</div>

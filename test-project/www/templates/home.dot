@@ -1,0 +1,14 @@
+
+
+<div>
+	<div data-route="page">to page</div>
+	<div data-route=":back">back</div>
+
+
+
+	<h1 data-route="create-game">{{= this.i18n.get('start') }}</h1>
+
+
+
+</div>
+
