@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const path = require('path');
 
@@ -48,6 +48,10 @@ module.exports = {
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract('style', 'css!sass')
+            },
+            {
+                test: /\.(jpg|jpeg|png|svg)$/,
+                loader: 'file-loader'
             },
             {
                 test: /\.js$/,

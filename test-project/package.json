@@ -11,8 +11,6 @@
   },
   "dependencies": {
 
-
-
   },
   "devDependencies": {
     "webpack": "*",
@@ -33,6 +31,8 @@
     "json-loader": "^0.5.4",
 
     "dot-loader": "^0.1.1",
+
+    "file-loader": "*",
 
 
     "extract-text-webpack-plugin": "^1.0.1",
