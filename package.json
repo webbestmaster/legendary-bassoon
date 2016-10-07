@@ -1,0 +1,19 @@
+{
+  "name": "ReactJS-Test-Application",
+  "version": "0.1.0",
+  "description": "ReactJS Test Application",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "static-server": "*",
+    "ip": "*"
+  }
+}
