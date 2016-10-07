@@ -11,12 +11,13 @@ var ExampleApplication = React.createClass({
         return <p>{message}</p>;
     }
 });
+
 var start = new Date().getTime();
 setInterval(function() {
     ReactDOM.render(
     <ExampleApplication elapsed={new Date().getTime() - start} />,
         document.getElementById('container')
     );
-}, 500);
+}, 100);
 
 export default ExampleApplication;

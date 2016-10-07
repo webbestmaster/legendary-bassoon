@@ -1,5 +1,10 @@
 "use strict";
 
+// add here all libraries
+
+require('react');
+require('react-dom');
+
 // add library here
 
 /*
