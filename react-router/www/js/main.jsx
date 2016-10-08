@@ -2,12 +2,14 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, Link, browserHistory } from 'react-router';
 
+var rootPath = window.location.pathname;
+
 const App = React.createClass({
     render() {
         return (
             <div>
                 <h1>header is here</h1>
-                <Link to="/users">link to user</Link>
+                <Link to={rootPath + "users"}>link to user</Link>
             </div>
         )
     }
@@ -68,10 +70,8 @@ const User = React.createClass({
 
 render((
     <Router history={browserHistory}>
-        <Route path="/" component={App}>
-            <Route path="/users" component={Users}>
-            </Route>
-        </Route>
+        <Route path={rootPath} component={App} />
+        <Route path={rootPath + "users"} component={Users} />
     </Router>
 ), document.getElementById('root'));
 
