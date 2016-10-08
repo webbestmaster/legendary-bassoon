@@ -1,0 +1,17 @@
+render
+getInitialState
+
+
+		getInitialState:	function()	{
+				return	{
+						news:	my_news
+				};
+		},
+		componentDidMount:	function()	{
+				/*	Слушай	событие	"Создана	новость"
+						если	событие	произошло,	обнови	this.state.news
+				*/
+		},
+		componentWillUnmount:	function()	{
+				/*	Больше	не	слушай	событие	"Создана	новость"	*/
+		},
