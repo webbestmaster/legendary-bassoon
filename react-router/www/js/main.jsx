@@ -10,6 +10,40 @@ const App = React.createClass({
             <div>
                 <h1>header is here</h1>
                 <Link to={rootPath + "users"}>link to user</Link>
+                <Photo />
+            </div>
+        )
+    }
+});
+
+
+const Photo = React.createClass({
+
+    toggleLiked: function() {
+        this.setState({
+            liked: !this.state.liked
+        });
+    },
+
+    getInitialState: function() {
+        return {
+            liked: false
+        }
+    },
+
+    render: function() {
+        var buttonClass = this.state.liked ? 'active' : '';
+
+        return (
+            <div className='photo'>
+                <img src="  " />
+
+                <div className='bar'>
+                    <button onClick={this.toggleLiked} className={buttonClass}>
+
+                    </button>
+                    <span></span>
+                </div>
             </div>
         )
     }
