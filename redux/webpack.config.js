@@ -4,7 +4,7 @@ var NpmInstallPlugin = require('npm-install-webpack-plugin')
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 module.exports = {
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'source-map',
     entry: [
         'webpack-hot-middleware/client',
         'babel-polyfill',
