@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var NpmInstallPlugin = require('npm-install-webpack-plugin');
 
 module.exports = {
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'source-map', // 'cheap-module-eval-source-map',
     entry: [
         'webpack-hot-middleware/client',
         'babel-polyfill',
