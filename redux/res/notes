@@ -1,0 +1,13 @@
++-- src
+| +-- actions
+| +-- components
+| +-- constants
+| +-- containers
+| +-- reducers
+| +-- index.js
++-- index.html
++-- package.json
++-- server.js
++-- webpack.config.js
+
+
