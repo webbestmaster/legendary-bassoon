@@ -12,9 +12,8 @@ export const routes = (
         <Route path='/' component={App}>
             <IndexRoute component={Home}/>
             <Route path='/admin' component={Admin}/>
-            <Route path='/genre/:genre' component={Genre}>
-                <Route path='/genre/:genre/:release' component={Release}/>
-            </Route>
+            <Route path='/genre/:genre' component={Genre} />
+            <Route path='/genre/:genre/:release' component={Release}/>
             <Route path='/list' component={List}/>
         </Route>
         <Route path='*' component={NotFound}/>
